@@ -5,7 +5,7 @@ defmodule RockeliveryWeb.ErrorView do
 
   alias Ecto.Changeset
 
-  def render("400.json", %{result: %Changeset{} = changeset}) do
+  def render("error.json", %{result: %Changeset{} = changeset}) do
     %{message: translate_errors(changeset)}
   end
 
