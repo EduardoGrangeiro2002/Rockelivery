@@ -11,4 +11,11 @@ defmodule RockeliveryWeb.UsersView do
   end
 
   def render("show.json", %{user: %User{} = user}), do: %{user: user}
+
+  def render("update.json", %{user: %User{} = user}) do
+    %{
+      message: "User update!",
+      user: user
+    }
+  end
 end
