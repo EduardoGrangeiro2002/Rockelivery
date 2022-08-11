@@ -36,8 +36,8 @@ defmodule Rockelivery.User do
     |> changes(params, @update_params)
   end
 
-  defp changes(changeset, params, fields) do
-    changeset
+  defp changes(struct, params, fields) do
+    struct
     |>cast(params, fields)
     |>validate_required(fields)
     |>validate_length(:password_hash, min: 6)
