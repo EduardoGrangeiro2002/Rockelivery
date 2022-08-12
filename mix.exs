@@ -53,6 +53,7 @@ defmodule Rockelivery.MixProject do
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:pbkdf2_elixir, "~> 2.0"},
       {:excoveralls, "~> 0.10", only: :test},
+      {:ex_machina, "~> 2.7.0"}
     ]
   end
 
