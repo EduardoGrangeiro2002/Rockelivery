@@ -1,4 +1,4 @@
-defmodule Rocklivery.Factory do
+defmodule Rockelivery.Factory do
   use ExMachina
 
   def user_params_factory() do

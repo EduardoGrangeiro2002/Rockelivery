@@ -1,6 +1,6 @@
 defmodule Rockelivery.UserTest do
   use Rockelivery.DataCase, async: true
-  import Rocklivery.Factory
+  import Rockelivery.Factory
 
   alias Rockelivery.User
   alias Ecto.Changeset

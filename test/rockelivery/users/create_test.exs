@@ -1,7 +1,7 @@
 defmodule Rockelivery.Users.CreateTest do
   use Rockelivery.DataCase, async: true
 
-  import Rocklivery.Factory
+  import Rockelivery.Factory
 
   alias Rockelivery.{Error, User}
   alias Rockelivery.Users.Create
