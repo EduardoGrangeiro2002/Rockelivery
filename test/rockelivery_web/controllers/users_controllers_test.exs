@@ -46,4 +46,18 @@ defmodule RockeliveryWeb.UsersControllersTest do
     end
 
   end
+
+  describe "delete/2" do
+    test "when there is a user with given id, deletes the user", %{conn: conn} do
+      id = "2ddf0be2-1b9b-4c46-a307-6dc28c3bb45d"
+      insert(:user)
+
+      response =
+        conn
+        |> delete(Routes.users_path(conn, :delete, id))
+        |> response(:no_content)
+
+        assert response ==  ""
+    end
+  end
 end
